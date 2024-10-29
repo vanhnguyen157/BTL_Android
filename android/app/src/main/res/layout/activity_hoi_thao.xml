@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HoiThaoActivity">
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hội thảo cùng doanh nghiệp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edt"
+        android:drawableStart="@drawable/logotimkiem"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Tìm kiếm"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_icontaskbar"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="64dp"
+        android:background="@drawable/custom_taskbar"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/custom_icontaskbar"
+            android:drawableTop="@drawable/logohome"
+            android:text="Trang chủ"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_icontaskbar"
+            android:drawableTop="@drawable/logoaccount"
+            android:text="Tài khoản"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"  />
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_icontaskbar"
+            android:drawableTop="@drawable/logosetting"
+            android:text="Cài đặt"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+</LinearLayout>
